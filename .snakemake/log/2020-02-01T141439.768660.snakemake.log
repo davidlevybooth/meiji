@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	merge_reads
+	2
+
+[Sat Feb  1 14:14:39 2020]
+rule merge_reads:
+    input: /home/david/MEIJI/reads
+    output: /home/david/MEIJI/reads/genomes.reads.qc.fa
+    jobid: 1
+
+[Sat Feb  1 14:14:39 2020]
+Error in rule merge_reads:
+    jobid: 1
+    output: /home/david/MEIJI/reads/genomes.reads.qc.fa
+
+RuleException:
+CalledProcessError in line 65 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Command ' set -euo pipefail;  cat /home/david/MEIJI/reads > /home/david/MEIJI/reads/genomes.reads.qc.fa ' returned non-zero exit status 1.
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 65, in __rule_merge_reads
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job merge_reads since they might be corrupted:
+/home/david/MEIJI/reads/genomes.reads.qc.fa
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T141439.768660.snakemake.log

@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	26	bbduk
+	27
+
+[Sat Feb  1 13:41:16 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/101-FEC-1-4-S3.fastq
+    output: /home/david/MEIJI/reads/101-FEC-1-4-S3.fastq.q30.fq
+    jobid: 2
+    wildcards: sra_id=101-FEC-1-4-S3.fastq
+    threads: 8
+
+[Sat Feb  1 13:41:19 2020]
+Finished job 2.
+1 of 27 steps (4%) done
+
+[Sat Feb  1 13:41:19 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/101-FEC-1-8-S4.fastq
+    output: /home/david/MEIJI/reads/101-FEC-1-8-S4.fastq.q30.fq
+    jobid: 15
+    wildcards: sra_id=101-FEC-1-8-S4.fastq
+    threads: 8
+
+Terminating processes on user request, this might take some time.
+[Sat Feb  1 13:41:21 2020]
+Error in rule bbduk:
+    jobid: 15
+    output: /home/david/MEIJI/reads/101-FEC-1-8-S4.fastq.q30.fq
+
+RuleException:
+CalledProcessError in line 87 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Command ' set -euo pipefail;  
+        bbduk.sh -Xmx20g t=8 in=/home/data/ssmstest/reads/101-FEC-1-8-S4.fastq out=/home/david/MEIJI/reads/101-FEC-1-8-S4.fastq.q30.fq         ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=rl trimq=15 ' returned non-zero exit status 130.
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 87, in __rule_bbduk
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job bbduk since they might be corrupted:
+/home/david/MEIJI/reads/101-FEC-1-8-S4.fastq.q30.fq
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T134116.131082.snakemake.log

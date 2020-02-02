@@ -1,0 +1,6 @@
+NameError in line 63 of /home/david/MEIJI/0.1/Snakefile:
+name 'mainString' is not defined
+  File "/home/david/MEIJI/0.1/Snakefile", line 69, in <module>
+  File "/home/david/MEIJI/0.1/Snakefile", line 56, in rename_samples
+  File "/home/david/MEIJI/0.1/Snakefile", line 56, in <listcomp>
+  File "/home/david/MEIJI/0.1/Snakefile", line 63, in replace_multiple

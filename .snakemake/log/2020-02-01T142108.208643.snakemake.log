@@ -1,0 +1,3 @@
+SyntaxError in line 62 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+EOF in multi-line statement (prepare_reads.smk, line 62)
+  File "/home/david/MEIJI/0.1/Snakefile", line 75, in <module>

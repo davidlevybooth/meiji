@@ -1,0 +1,3 @@
+SyntaxError in line 75 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+invalid syntax
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>

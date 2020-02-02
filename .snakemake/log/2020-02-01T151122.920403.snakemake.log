@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	format_headers
+	1	merge_reads
+	3
+
+[Sat Feb  1 15:11:22 2020]
+rule format_headers:
+    input: /home/david/MEIJI/reads/101-FEC-1-8-S4.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.fasta, /home/david/MEIJI/reads/101-FEC-1-0-S1.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.fasta
+    output: /home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.head.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.head.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.head.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.head.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.head.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.head.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.head.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.head.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.head.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.head.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.head.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.head.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.head.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.head.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.head.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.head.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.head.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.head.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.head.fasta, /home/david/MEIJI/reads/101-FEC-1-0-S1.head.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.head.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.head.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.head.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.head.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.head.fasta
+    jobid: 2
+
+Terminating processes on user request, this might take some time.
+[Sat Feb  1 15:11:25 2020]
+Error in rule format_headers:
+    jobid: 2
+    output: /home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.head.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.head.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.head.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.head.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.head.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.head.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.head.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.head.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.head.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.head.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.head.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.head.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.head.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.head.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.head.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.head.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.head.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.head.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.head.fasta, /home/david/MEIJI/reads/101-FEC-1-0-S1.head.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.head.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.head.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.head.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.head.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.head.fasta
+
+RuleException:
+CalledProcessError in line 59 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Command ' set -euo pipefail;  /home/david/miniconda3/envs/Praxis/bin/python /home/david/MEIJI/0.1/.snakemake/scripts/tmpzbxrfn4z.rename_headers.py ' returned non-zero exit status 1.
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 59, in __rule_format_headers
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job format_headers since they might be corrupted:
+/home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T151122.920403.snakemake.log

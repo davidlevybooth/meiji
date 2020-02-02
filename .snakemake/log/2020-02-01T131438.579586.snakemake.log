@@ -1,0 +1,3 @@
+SyntaxError in line 74 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Unexpected keyword for in rule definition (prepare_reads.smk, line 74)
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>

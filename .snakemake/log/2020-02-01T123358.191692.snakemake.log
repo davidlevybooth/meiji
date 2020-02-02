@@ -1,0 +1,4 @@
+KeyError in line 24 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+'READ_DIR'
+  File "/home/david/MEIJI/0.1/Snakefile", line 90, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 24, in <module>

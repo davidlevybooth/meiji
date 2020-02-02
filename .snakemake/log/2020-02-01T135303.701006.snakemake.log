@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 67 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Wildcards in input files cannot be determined from output files:
+'sample'

@@ -1,0 +1,3 @@
+WildcardError in line 79 of /home/david/MEIJI/0.1/Snakefile:
+No values given for wildcard 'OUTPUT_DIR'.
+  File "/home/david/MEIJI/0.1/Snakefile", line 79, in <module>

@@ -1,0 +1,3 @@
+SyntaxError in line 76 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Colon expected after keyword run. (prepare_reads.smk, line 76)
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>

@@ -1,0 +1,4 @@
+TypeError in line 81 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+expected string or bytes-like object
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 81, in <module>

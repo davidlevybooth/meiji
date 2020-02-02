@@ -1,0 +1,4 @@
+NameError in line 58 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+name 'formatted_samples' is not defined
+  File "/home/david/MEIJI/0.1/Snakefile", line 75, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 58, in <module>

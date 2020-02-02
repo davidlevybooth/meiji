@@ -1,0 +1,4 @@
+TypeError in line 50 of /home/david/MEIJI/0.1/Snakefile:
+must be str, not list
+  File "/home/david/MEIJI/0.1/Snakefile", line 83, in <module>
+  File "/home/david/MEIJI/0.1/Snakefile", line 50, in read_format

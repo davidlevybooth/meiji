@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule bbduk contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 77, in <module>

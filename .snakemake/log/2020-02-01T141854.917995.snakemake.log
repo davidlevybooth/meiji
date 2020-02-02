@@ -1,0 +1,29 @@
+Building DAG of jobs...
+MissingInputException in line 61 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Missing input files for rule merge_reads:
+102-FEC-1-4-S7.fastq
+102-FEC-1-2-S6.fastq
+102-FEC-1-8-S8.fastq
+104-FEC-1-8-S16.fastq
+105-FEC-1-2-S18.fastq
+101-FEC-1-0-S1.fastq
+103-FEC-1-0-S9.fastq
+107-FEC-1-2-S26.fastq
+103-FEC-1-4-S11.fastq
+106-FEC-1-2-S22.fastq
+104-FEC-1-2-S14.fastq
+104-FEC-1-4-S15.fastq
+106-FEC-1-0-S21.fastq
+104-FEC-1-0-S13.fastq
+102-FEC-1-0-S5.fastq
+105-FEC-1-8-S20.fastq
+105-FEC-1-4-S19.fastq
+101-FEC-1-4-S3.fastq
+101-FEC-1-8-S4.fastq
+106-FEC-1-8-S24.fastq
+107-FEC-1-0-S25.fastq
+103-FEC-1-8-S12.fastq
+106-FEC-1-4-S23.fastq
+103-FEC-1-2-S10.fastq
+101-FEC-1-2-S2.fastq
+105-FEC-1-0-S17.fastq

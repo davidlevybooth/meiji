@@ -1,0 +1,4 @@
+TypeError in line 51 of /home/david/MEIJI/0.1/Snakefile:
+listdir: path should be string, bytes, os.PathLike, integer or None, not list
+  File "/home/david/MEIJI/0.1/Snakefile", line 82, in <module>
+  File "/home/david/MEIJI/0.1/Snakefile", line 51, in read_format

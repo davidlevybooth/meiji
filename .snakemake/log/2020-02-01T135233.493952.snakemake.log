@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 67 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Missing input files for rule bbduk:
+/home/data/ssmstest/reads/102-FEC-1-8-S8.q30.fq

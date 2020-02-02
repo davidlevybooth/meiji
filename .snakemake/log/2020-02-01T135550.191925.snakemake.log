@@ -1,0 +1,4 @@
+AttributeError in line 68 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+'list' object has no attribute 'replace'
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 68, in <module>

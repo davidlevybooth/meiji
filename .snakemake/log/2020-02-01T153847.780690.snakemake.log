@@ -1,0 +1,29 @@
+Building DAG of jobs...
+MissingInputException in line 82 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Missing input files for rule merge_reads:
+/home/david/MEIJI/reads/101-FEC-1-0-S1.head.fasta2
+/home/david/MEIJI/reads/107-FEC-1-2-S26.head.fasta2
+/home/david/MEIJI/reads/102-FEC-1-4-S7.head.fasta2
+/home/david/MEIJI/reads/101-FEC-1-4-S3.head.fasta2
+/home/david/MEIJI/reads/102-FEC-1-8-S8.head.fasta2
+/home/david/MEIJI/reads/104-FEC-1-2-S14.head.fasta2
+/home/david/MEIJI/reads/101-FEC-1-2-S2.head.fasta2
+/home/david/MEIJI/reads/103-FEC-1-0-S9.head.fasta2
+/home/david/MEIJI/reads/105-FEC-1-8-S20.head.fasta2
+/home/david/MEIJI/reads/103-FEC-1-4-S11.head.fasta2
+/home/david/MEIJI/reads/106-FEC-1-2-S22.head.fasta2
+/home/david/MEIJI/reads/102-FEC-1-2-S6.head.fasta2
+/home/david/MEIJI/reads/105-FEC-1-4-S19.head.fasta2
+/home/david/MEIJI/reads/106-FEC-1-8-S24.head.fasta2
+/home/david/MEIJI/reads/104-FEC-1-8-S16.head.fasta2
+/home/david/MEIJI/reads/103-FEC-1-2-S10.head.fasta2
+/home/david/MEIJI/reads/106-FEC-1-0-S21.head.fasta2
+/home/david/MEIJI/reads/106-FEC-1-4-S23.head.fasta2
+/home/david/MEIJI/reads/104-FEC-1-4-S15.head.fasta2
+/home/david/MEIJI/reads/105-FEC-1-0-S17.head.fasta2
+/home/david/MEIJI/reads/105-FEC-1-2-S18.head.fasta2
+/home/david/MEIJI/reads/102-FEC-1-0-S5.head.fasta2
+/home/david/MEIJI/reads/103-FEC-1-8-S12.head.fasta2
+/home/david/MEIJI/reads/107-FEC-1-0-S25.head.fasta2
+/home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta2
+/home/david/MEIJI/reads/104-FEC-1-0-S13.head.fasta2

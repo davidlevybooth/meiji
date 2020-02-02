@@ -1,0 +1,11 @@
+#configs
+
+# Configure environment
+###############################################################################
+threads: 8
+
+SAMPLE_DIR: /home/data/ssmstest/reads
+
+OUTPUT_DIR: /home/david/MEIJI/reads
+
+adapter: utils/adapter/TruSeq3-PE.fa

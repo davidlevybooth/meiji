@@ -1,0 +1,3 @@
+KeyError in line 43 of /home/david/MEIJI/0.1/Snakefile:
+'output_directory'
+  File "/home/david/MEIJI/0.1/Snakefile", line 43, in <module>

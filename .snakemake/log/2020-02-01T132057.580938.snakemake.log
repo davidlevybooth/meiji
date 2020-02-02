@@ -1,0 +1,4 @@
+KeyError in line 67 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+'input_samples'
+  File "/home/david/MEIJI/0.1/Snakefile", line 85, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 67, in <module>

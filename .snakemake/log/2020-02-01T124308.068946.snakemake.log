@@ -1,0 +1,29 @@
+Building DAG of jobs...
+MissingInputException in line 74 of /home/david/MEIJI/0.1/Snakefile:
+Missing input files for rule all:
+/home/david/MEIJI/reads/106-FEC-1-0-S21.q30.q30.fq
+/home/david/MEIJI/reads/104-FEC-1-8-S16.q30.q30.fq
+/home/david/MEIJI/reads/101-FEC-1-2-S2.q30.q30.fq
+/home/david/MEIJI/reads/107-FEC-1-0-S25.q30.q30.fq
+/home/david/MEIJI/reads/105-FEC-1-4-S19.q30.q30.fq
+/home/david/MEIJI/reads/103-FEC-1-2-S10.q30.q30.fq
+/home/david/MEIJI/reads/101-FEC-1-8-S4.q30.q30.fq
+/home/david/MEIJI/reads/106-FEC-1-2-S22.q30.q30.fq
+/home/david/MEIJI/reads/107-FEC-1-2-S26.q30.q30.fq
+/home/david/MEIJI/reads/101-FEC-1-4-S3.q30.q30.fq
+/home/david/MEIJI/reads/105-FEC-1-2-S18.q30.q30.fq
+/home/david/MEIJI/reads/102-FEC-1-4-S7.q30.q30.fq
+/home/david/MEIJI/reads/103-FEC-1-0-S9.q30.q30.fq
+/home/david/MEIJI/reads/102-FEC-1-8-S8.q30.q30.fq
+/home/david/MEIJI/reads/104-FEC-1-0-S13.q30.q30.fq
+/home/david/MEIJI/reads/104-FEC-1-2-S14.q30.q30.fq
+/home/david/MEIJI/reads/103-FEC-1-8-S12.q30.q30.fq
+/home/david/MEIJI/reads/101-FEC-1-0-S1.q30.q30.fq
+/home/david/MEIJI/reads/106-FEC-1-8-S24.q30.q30.fq
+/home/david/MEIJI/reads/102-FEC-1-2-S6.q30.q30.fq
+/home/david/MEIJI/reads/104-FEC-1-4-S15.q30.q30.fq
+/home/david/MEIJI/reads/105-FEC-1-0-S17.q30.q30.fq
+/home/david/MEIJI/reads/105-FEC-1-8-S20.q30.q30.fq
+/home/david/MEIJI/reads/102-FEC-1-0-S5.q30.q30.fq
+/home/david/MEIJI/reads/106-FEC-1-4-S23.q30.q30.fq
+/home/david/MEIJI/reads/103-FEC-1-4-S11.q30.q30.fq

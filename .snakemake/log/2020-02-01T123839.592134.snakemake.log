@@ -1,0 +1,4 @@
+IndexError in line 66 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+list index out of range
+  File "/home/david/MEIJI/0.1/Snakefile", line 90, in <module>
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 66, in <module>
