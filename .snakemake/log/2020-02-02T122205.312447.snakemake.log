@@ -1,0 +1,3 @@
+WorkflowError in line 86 of /home/david/MEIJI/0.1/Snakefile:
+Failed to open /home/david/MEIJI/0.1/rules/process_alignment.smk.
+  File "/home/david/MEIJI/0.1/Snakefile", line 86, in <module>

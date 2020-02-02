@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	bbmap
+	1	merge_sams
+	3
+
+[Sun Feb  2 12:29:56 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.6.sam
+    jobid: 3
+    wildcards: build=6
+    threads: 8
+
+[Sun Feb  2 13:24:56 2020]
+Finished job 3.
+1 of 3 steps (33%) done
+
+[Sun Feb  2 13:24:56 2020]
+rule merge_sams:
+    input: /home/david/MEIJI/output/
+    output: /home/david/MEIJI/processed/merged.sam
+    jobid: 6
+
+[Sun Feb  2 13:24:56 2020]
+Error in rule merge_sams:
+    jobid: 6
+    output: /home/david/MEIJI/processed/merged.sam
+
+RuleException:
+WorkflowError in line 45 of /home/david/MEIJI/0.1/rules/process_alignments.smk:
+URLError: <urlopen error [Errno 2] No such file or directory: '/home/david/MEIJI/0.1/rules/scripts/sam.merge.py'>
+  File "/home/david/MEIJI/0.1/rules/process_alignments.smk", line 45, in __rule_merge_sams
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-02T122956.258518.snakemake.log

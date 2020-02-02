@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	compile_taxonomy
+	2
+
+[Sun Feb  2 14:45:55 2020]
+rule compile_taxonomy:
+    input: /home/david/MEIJI/processed/merged.sam.covfilt.taxonomy
+    output: /home/david/MEIJI/processed/merged.sam.covfilt.taxonomy.count
+    jobid: 3
+
+[Sun Feb  2 14:46:38 2020]
+Finished job 3.
+1 of 2 steps (50%) done
+
+[Sun Feb  2 14:46:38 2020]
+localrule all:
+    input: /home/david/MEIJI/reads/reads.qc.lin.sub.fa, /home/david/MEIJI/output/bbmap.1.sam, /home/david/MEIJI/output/bbmap.2.sam, /home/david/MEIJI/output/bbmap.3.sam, /home/david/MEIJI/output/bbmap.4.sam, /home/david/MEIJI/output/bbmap.5.sam, /home/david/MEIJI/output/bbmap.6.sam, /home/david/MEIJI/output/bbmap.7.sam, /home/david/MEIJI/output/bbmap.8.sam, /home/david/MEIJI/processed/merged.sam.covfilt.taxonomy.count
+    jobid: 0
+
+[Sun Feb  2 14:46:38 2020]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-02T144555.480955.snakemake.log

@@ -16,3 +16,5 @@ rule bbmap:
     wildcards: build=2
     threads: 8
 
+Terminating processes on user request, this might take some time.
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T184151.731325.snakemake.log

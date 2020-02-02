@@ -33,6 +33,7 @@ THREADS = config["threads"]
 SAMPLE_DIR = config["SAMPLE_DIR"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 
+# messages ##############################################################
 
 print(bcolors.OKBLUE + "\nRunning Meiji prepare_reads module 0.1\n" + bcolors.ENDC)
 

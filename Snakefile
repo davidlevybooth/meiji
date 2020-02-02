@@ -73,7 +73,8 @@ rule all:
     """
     input:
         "{OUTPUT_DIR}reads/reads.qc.lin.sub.fa".format(OUTPUT_DIR = OUTPUT_DIR),
-        expand("{OUTPUT_DIR}output/bbmap.{build}.sam", OUTPUT_DIR = OUTPUT_DIR, build = index_nodes)
+        expand("{OUTPUT_DIR}output/bbmap.{build}.sam", OUTPUT_DIR = OUTPUT_DIR, build = index_nodes),
+        "{OUTPUT_DIR}processed/merged.sam.covfilt.taxonomy.count.clustered".format(OUTPUT_DIR = OUTPUT_DIR)
         #"{OUTDIR}/merged.sam.covfilt.taxonomy.count.tsv",
         # "{OUTDIR}/clustered/merged.sam.covfilt.taxonomy.count.clustered.tsv",
         # "{OUTDIR}/merged.sam.covfilt.taxonomy.count.species.kegg.txt"
@@ -82,6 +83,6 @@ rule all:
 
 include: "rules/prepare_reads.smk"
 include: "rules/align_reads.smk"
-# include: "rules/process_alignment.smk"
+include: "rules/process_alignments.smk"
 # include: "rules/filter_counts.smk"
 # include: "rules/assign_function.smk"

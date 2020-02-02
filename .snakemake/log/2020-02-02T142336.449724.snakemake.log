@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	sam_coverage
+	2
+
+[Sun Feb  2 14:23:36 2020]
+rule sam_coverage:
+    input: /home/david/MEIJI/processed/merged.cov, /home/david/MEIJI/processed/merged.sam
+    output: /home/david/MEIJI/processed/merged.sam.covfilt
+    jobid: 4
+
+Terminating processes on user request, this might take some time.
+[Sun Feb  2 14:26:13 2020]
+Error in rule sam_coverage:
+    jobid: 4
+    output: /home/david/MEIJI/processed/merged.sam.covfilt
+
+RuleException:
+CalledProcessError in line 63 of /home/david/MEIJI/0.1/rules/process_alignments.smk:
+Command ' set -euo pipefail;  /home/david/miniconda3/envs/Praxis/bin/python /home/david/MEIJI/0.1/.snakemake/scripts/tmple9u356g.sam.coverage.py ' returned non-zero exit status 1.
+  File "/home/david/MEIJI/0.1/rules/process_alignments.smk", line 63, in __rule_sam_coverage
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job sam_coverage since they might be corrupted:
+/home/david/MEIJI/processed/merged.sam.covfilt
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-02T142336.449724.snakemake.log

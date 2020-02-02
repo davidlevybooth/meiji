@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	bbmap
+	1	merge_sams
+	3
+
+[Sun Feb  2 12:28:32 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.6.sam
+    jobid: 4
+    wildcards: build=6
+    threads: 8
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-02T122832.587786.snakemake.log
