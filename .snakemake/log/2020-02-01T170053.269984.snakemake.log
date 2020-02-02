@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	22	bbduk
+	1	format_headers
+	1	linearize_reads
+	1	merge_reads
+	26
+
+[Sat Feb  1 17:00:53 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/107-FEC-1-0-S25.fastq
+    output: /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+    jobid: 6
+    wildcards: samples=107-FEC-1-0-S25
+    threads: 8
+
+Terminating processes on user request, this might take some time.
+[Sat Feb  1 17:00:54 2020]
+Error in rule bbduk:
+    jobid: 6
+    output: /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+
+RuleException:
+CalledProcessError in line 67 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Command ' set -euo pipefail;  
+        bbduk.sh -Xmx20g t=8 in=/home/data/ssmstest/reads/107-FEC-1-0-S25.fastq out=/home/david/MEIJI/reads/107-FEC-1-0-S25.fasta qtrim=r trimq=30 minlen=130 ftl=10 ftr=160 ' returned non-zero exit status 130.
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 67, in __rule_bbduk
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job bbduk since they might be corrupted:
+/home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T170053.269984.snakemake.log

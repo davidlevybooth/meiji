@@ -1,0 +1,20 @@
+Building DAG of jobs...
+File path /home/david/MEIJI//reads/reads.qc.lin.sub.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.1.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.2.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.3.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.4.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.5.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.6.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.7.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.8.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+MissingInputException in line 70 of /home/david/MEIJI/0.1/Snakefile:
+Missing input files for rule all:
+/home/david/MEIJI//output/bbmap.2.sam
+/home/david/MEIJI//output/bbmap.1.sam
+/home/david/MEIJI//output/bbmap.8.sam
+/home/david/MEIJI//output/bbmap.7.sam
+/home/david/MEIJI//output/bbmap.4.sam
+/home/david/MEIJI//output/bbmap.3.sam
+/home/david/MEIJI//output/bbmap.6.sam
+/home/david/MEIJI//output/bbmap.5.sam

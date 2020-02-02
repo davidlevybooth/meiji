@@ -1,0 +1,5 @@
+Building DAG of jobs...
+File path /home/david/MEIJI//reads.qc.lin.sub.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+MissingInputException in line 69 of /home/david/MEIJI/0.1/Snakefile:
+Missing input files for rule all:
+/home/david/MEIJI//reads.qc.lin.sub.fa

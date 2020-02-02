@@ -1,0 +1,68 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	bbmap
+	9
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.6.sam
+    jobid: 8
+    wildcards: build=6
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.2.sam
+    jobid: 1
+    wildcards: build=2
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.4.sam
+    jobid: 2
+    wildcards: build=4
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.1.sam
+    jobid: 3
+    wildcards: build=1
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.8.sam
+    jobid: 4
+    wildcards: build=8
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.7.sam
+    jobid: 7
+    wildcards: build=7
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.3.sam
+    jobid: 5
+    wildcards: build=3
+
+[Sat Feb  1 18:19:35 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.5.sam
+    jobid: 6
+    wildcards: build=5
+
+Terminating processes on user request, this might take some time.
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T181935.103889.snakemake.log

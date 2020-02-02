@@ -6,6 +6,6 @@ threads: 8
 
 SAMPLE_DIR: /home/data/ssmstest/reads
 
-OUTPUT_DIR: /home/david/MEIJI/reads
+OUTPUT_DIR: /home/david/MEIJI/
 
-adapter: utils/adapter/TruSeq3-PE.fa
+INDEX_DIR: /home/data/db/gtdb/bbmap/

@@ -1,0 +1,170 @@
+Building DAG of jobs...
+File path /home/david/MEIJI//reads/reads.qc.lin.sub.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.1.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.2.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.3.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.4.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.5.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.6.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.7.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.8.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/reads.qc.lin.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.1.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.2.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.3.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.4.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.5.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.6.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.7.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//output/bbmap.8.sam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/reads.qc.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/reads.qc.lin.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-0-S1.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-2-S2.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-4-S3.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-8-S4.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-0-S5.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-2-S6.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-4-S7.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-8-S8.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-0-S9.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-2-S10.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-4-S11.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-8-S12.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-0-S13.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-2-S14.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-4-S15.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-8-S16.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-0-S17.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-2-S18.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-4-S19.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-8-S20.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-0-S21.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-2-S22.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-4-S23.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-8-S24.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-0-S25.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-2-S26.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/reads.qc.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-0-S1.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-2-S2.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-4-S3.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-8-S4.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-0-S5.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-2-S6.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-4-S7.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-8-S8.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-0-S9.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-2-S10.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-4-S11.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-8-S12.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-0-S13.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-2-S14.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-4-S15.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-8-S16.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-0-S17.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-2-S18.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-4-S19.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-8-S20.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-0-S21.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-2-S22.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-4-S23.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-8-S24.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-0-S25.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-2-S26.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-0-S1.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-2-S2.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-4-S3.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-8-S4.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-0-S5.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-2-S6.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-4-S7.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-8-S8.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-0-S9.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-2-S10.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-4-S11.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-8-S12.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-0-S13.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-2-S14.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-4-S15.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-8-S16.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-0-S17.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-2-S18.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-4-S19.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-8-S20.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-0-S21.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-2-S22.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-4-S23.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-8-S24.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-0-S25.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-2-S26.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-8-S8.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-2-S2.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-0-S1.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-0-S21.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-4-S3.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-2-S10.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-0-S9.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-0-S17.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-2-S22.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-0-S5.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-4-S7.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-4-S15.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-0-S13.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-4-S23.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-2-S26.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-4-S11.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-2-S6.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-8-S16.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-0-S25.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-8-S4.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-8-S20.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-2-S18.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-8-S24.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-4-S19.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-2-S14.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-8-S12.head.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-0-S25.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-2-S22.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-2-S6.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-0-S1.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-4-S15.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-8-S24.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-0-S9.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/107-FEC-1-2-S26.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-0-S5.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-4-S3.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-2-S10.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-8-S8.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-0-S13.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-0-S17.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-4-S19.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/102-FEC-1-4-S7.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-8-S16.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-8-S4.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/104-FEC-1-2-S14.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-2-S18.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/101-FEC-1-2-S2.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-0-S21.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-8-S12.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/105-FEC-1-8-S20.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/106-FEC-1-4-S23.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /home/david/MEIJI//reads/103-FEC-1-4-S11.fasta contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	bbmap
+	2
+
+[Sat Feb  1 17:44:24 2020]
+rule bbmap:
+    input: /home/david/MEIJI//reads/reads.qc.lin.fa
+    output: /home/david/MEIJI//output/bbmap.1.sam, /home/david/MEIJI//output/bbmap.2.sam, /home/david/MEIJI//output/bbmap.3.sam, /home/david/MEIJI//output/bbmap.4.sam, /home/david/MEIJI//output/bbmap.5.sam, /home/david/MEIJI//output/bbmap.6.sam, /home/david/MEIJI//output/bbmap.7.sam, /home/david/MEIJI//output/bbmap.8.sam
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T174424.691156.snakemake.log

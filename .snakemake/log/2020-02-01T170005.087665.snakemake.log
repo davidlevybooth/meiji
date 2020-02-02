@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	26	bbduk
+	1	format_headers
+	1	linearize_reads
+	1	merge_reads
+	30
+
+[Sat Feb  1 17:00:05 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/101-FEC-1-4-S3.fastq
+    output: /home/david/MEIJI/reads/101-FEC-1-4-S3.fasta
+    jobid: 21
+    wildcards: samples=101-FEC-1-4-S3
+    threads: 8
+
+[Sat Feb  1 17:00:07 2020]
+Finished job 21.
+1 of 30 steps (3%) done
+
+[Sat Feb  1 17:00:07 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/101-FEC-1-8-S4.fastq
+    output: /home/david/MEIJI/reads/101-FEC-1-8-S4.fasta
+    jobid: 15
+    wildcards: samples=101-FEC-1-8-S4
+    threads: 8
+
+[Sat Feb  1 17:00:10 2020]
+Finished job 15.
+2 of 30 steps (7%) done
+
+[Sat Feb  1 17:00:10 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/102-FEC-1-4-S7.fastq
+    output: /home/david/MEIJI/reads/102-FEC-1-4-S7.fasta
+    jobid: 19
+    wildcards: samples=102-FEC-1-4-S7
+    threads: 8
+
+[Sat Feb  1 17:00:12 2020]
+Finished job 19.
+3 of 30 steps (10%) done
+
+[Sat Feb  1 17:00:12 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/103-FEC-1-4-S11.fastq
+    output: /home/david/MEIJI/reads/103-FEC-1-4-S11.fasta
+    jobid: 12
+    wildcards: samples=103-FEC-1-4-S11
+    threads: 8
+
+[Sat Feb  1 17:00:14 2020]
+Finished job 12.
+4 of 30 steps (13%) done
+
+[Sat Feb  1 17:00:14 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/107-FEC-1-0-S25.fastq
+    output: /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+    jobid: 24
+    wildcards: samples=107-FEC-1-0-S25
+    threads: 8
+
+Terminating processes on user request, this might take some time.
+[Sat Feb  1 17:00:15 2020]
+Error in rule bbduk:
+    jobid: 24
+    output: /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+
+RuleException:
+CalledProcessError in line 67 of /home/david/MEIJI/0.1/rules/prepare_reads.smk:
+Command ' set -euo pipefail;  
+        bbduk.sh -Xmx20g t=8 in=/home/data/ssmstest/reads/107-FEC-1-0-S25.fastq out=/home/david/MEIJI/reads/107-FEC-1-0-S25.fasta qtrim=r trimq=30 minlen=130 ftl=10 ftr=160 ' returned non-zero exit status 130.
+  File "/home/david/MEIJI/0.1/rules/prepare_reads.smk", line 67, in __rule_bbduk
+  File "/home/david/miniconda3/envs/Praxis/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job bbduk since they might be corrupted:
+/home/david/MEIJI/reads/107-FEC-1-0-S25.fasta
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T170005.087665.snakemake.log

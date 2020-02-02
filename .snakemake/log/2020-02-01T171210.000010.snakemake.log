@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	bbduk
+	1	format_headers
+	1	linearize_reads
+	1	merge_reads
+	5
+
+[Sat Feb  1 17:12:10 2020]
+rule bbduk:
+    input: /home/data/ssmstest/reads/107-FEC-1-2-S26.fastq
+    output: /home/david/MEIJI/reads/107-FEC-1-2-S26.fasta
+    jobid: 23
+    wildcards: samples=107-FEC-1-2-S26
+    threads: 8
+
+[Sat Feb  1 17:12:12 2020]
+Finished job 23.
+1 of 5 steps (20%) done
+
+[Sat Feb  1 17:12:12 2020]
+rule format_headers:
+    input: /home/david/MEIJI/reads/101-FEC-1-0-S1.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.fasta, /home/david/MEIJI/reads/101-FEC-1-8-S4.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.fasta
+    output: /home/david/MEIJI/reads/101-FEC-1-0-S1.head.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.head.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.head.fasta, /home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.head.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.head.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.head.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.head.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.head.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.head.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.head.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.head.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.head.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.head.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.head.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.head.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.head.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.head.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.head.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.head.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.head.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.head.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.head.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.head.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.head.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.head.fasta
+    jobid: 3
+
+[Sat Feb  1 17:12:27 2020]
+Finished job 3.
+2 of 5 steps (40%) done
+
+[Sat Feb  1 17:12:27 2020]
+rule merge_reads:
+    input: /home/david/MEIJI/reads/101-FEC-1-0-S1.head.fasta, /home/david/MEIJI/reads/101-FEC-1-2-S2.head.fasta, /home/david/MEIJI/reads/101-FEC-1-4-S3.head.fasta, /home/david/MEIJI/reads/101-FEC-1-8-S4.head.fasta, /home/david/MEIJI/reads/102-FEC-1-0-S5.head.fasta, /home/david/MEIJI/reads/102-FEC-1-2-S6.head.fasta, /home/david/MEIJI/reads/102-FEC-1-4-S7.head.fasta, /home/david/MEIJI/reads/102-FEC-1-8-S8.head.fasta, /home/david/MEIJI/reads/103-FEC-1-0-S9.head.fasta, /home/david/MEIJI/reads/103-FEC-1-2-S10.head.fasta, /home/david/MEIJI/reads/103-FEC-1-4-S11.head.fasta, /home/david/MEIJI/reads/103-FEC-1-8-S12.head.fasta, /home/david/MEIJI/reads/104-FEC-1-0-S13.head.fasta, /home/david/MEIJI/reads/104-FEC-1-2-S14.head.fasta, /home/david/MEIJI/reads/104-FEC-1-4-S15.head.fasta, /home/david/MEIJI/reads/104-FEC-1-8-S16.head.fasta, /home/david/MEIJI/reads/105-FEC-1-0-S17.head.fasta, /home/david/MEIJI/reads/105-FEC-1-2-S18.head.fasta, /home/david/MEIJI/reads/105-FEC-1-4-S19.head.fasta, /home/david/MEIJI/reads/105-FEC-1-8-S20.head.fasta, /home/david/MEIJI/reads/106-FEC-1-0-S21.head.fasta, /home/david/MEIJI/reads/106-FEC-1-2-S22.head.fasta, /home/david/MEIJI/reads/106-FEC-1-4-S23.head.fasta, /home/david/MEIJI/reads/106-FEC-1-8-S24.head.fasta, /home/david/MEIJI/reads/107-FEC-1-0-S25.head.fasta, /home/david/MEIJI/reads/107-FEC-1-2-S26.head.fasta
+    output: /home/david/MEIJI/reads/reads.qc.fa
+    jobid: 2
+
+[Sat Feb  1 17:12:28 2020]
+Finished job 2.
+3 of 5 steps (60%) done
+
+[Sat Feb  1 17:12:28 2020]
+rule linearize_reads:
+    input: /home/david/MEIJI/reads/reads.qc.fa
+    output: /home/david/MEIJI/reads/reads.qc.lin.fa
+    jobid: 1
+
+Removing temporary output file /home/david/MEIJI/reads/reads.qc.fa.
+[Sat Feb  1 17:12:32 2020]
+Finished job 1.
+4 of 5 steps (80%) done
+
+[Sat Feb  1 17:12:32 2020]
+localrule all:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    jobid: 0
+
+[Sat Feb  1 17:12:32 2020]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T171210.000010.snakemake.log

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+File path /home/david/MEIJI//reads/reads.qc.lin.sub.fa contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Nothing to be done.
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T173233.161350.snakemake.log

@@ -4,7 +4,6 @@
 #
 # prepare_reads.smk 0.1
 # Reads filtering: bbduk
-# Read formatting: reshape.sh
 # Read linearization: seqtk
 #
 # Built for use in Meiji Snakemake 0.1
@@ -34,47 +33,66 @@ THREADS = config["threads"]
 SAMPLE_DIR = config["SAMPLE_DIR"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 
+
 print(bcolors.OKBLUE + "\nRunning Meiji prepare_reads module 0.1\n" + bcolors.ENDC)
+
+# definitions ###########################################################
+
+#Move this to central file parsing module
+def read_format(SAMPLE_DIR):
+    fq_list = os.listdir(SAMPLE_DIR)
+    fq_list.sort()
+    if ".gz" in fq_list[0]:
+        raise Exception(bcolors.FAIL + 'gzipped input files detected.\nProvide directory with gunzipped fastq files\n' + bcolors.ENDC)
+    if ".fasta" in fq_list[0]:
+        raise Exception(bcolors.FAIL + 'fasta input files detected.\nProvide directory with gunzipped fastq files\n' + bcolors.ENDC)
+    if ".fastq" or ".fq" in fq_list[0]:
+        print(bcolors.OKGREEN + 'fastq input files detected.\nContinuing with Meiji pipeline\n' + bcolors.ENDC)
+    fq_list = [f.replace(".fastq", "") for f in fq_list]
+    fq_list = [f.replace(".fq", "") for f in fq_list]
+    return(fq_list)
 
 # file parsing ############################################################
 
-samples = os.listdir(SAMPLE_DIR)
-samples = [f.replace(".fastq", "") for f in samples]
-
+samples = read_format(SAMPLE_DIR)
 
 # rules ##################################################################
 
 rule bbduk:
     input: "{SAMPLE_DIR}/{{samples}}.fastq".format(SAMPLE_DIR = SAMPLE_DIR)
-    output: "{OUTPUT_DIR}/{{samples}}.fasta".format(OUTPUT_DIR = OUTPUT_DIR)
+    output: "{OUTPUT_DIR}/reads/{{samples}}.fasta".format(OUTPUT_DIR = OUTPUT_DIR)
     threads: THREADS
-    shell:
-        """
-        bbduk.sh -Xmx20g t={threads} in={input} out={output} qtrim=r trimq=30 minlen=130 ftl=10 ftr=160
-        """
-rule format_headers:
-    input: expand("{OUTPUT_DIR}/{samples}.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
-    output: expand("{OUTPUT_DIR}/{samples}.head.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
     run:
-        for input_fasta in input:
-            print("Refomatted Header: " + input_fasta)
-            output_fasta = input_fasta.replace(".fasta", ".head.fasta")
-            filename = os.path.splitext(input_fasta)[0]
-            filename = os.path.basename(filename)
-            rn = 1
-            fo = open(output_fasta, "w")
-            with open(input_fasta,"r") as fi:
-                for ln in fi:
-                    if ln.startswith('>'):
-                        ln = ">" + filename + "_" + str(rn)+"\n"
-                        rn += 1
-                    fo.write(ln)
-            os.remove(input_fasta)
+        shell("bbduk.sh -Xmx20g t={threads} in={input} out={output} qtrim=r trimq=30 minlen=130 ftl=10 ftr=160")
+
+rule format_headers:
+    input: expand("{OUTPUT_DIR}reads/{samples}.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
+    output: expand("{OUTPUT_DIR}reads/{samples}.head.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
+    run:
+        try:
+            for input_fasta in input:
+                print(bcolors.OKGREEN + "Refomatted Header: " + input_fasta + bcolors.ENDC)
+                output_fasta = input_fasta.replace(".fasta", ".head.fasta")
+                filename = os.path.splitext(input_fasta)[0]
+                filename = os.path.basename(filename)
+                if "_" in filename:
+                    raise Exception(bcolors.FAIL + 'filenames should not contain underscores "_"\n' + bcolors.ENDC)
+                rn = 1
+                fo = open(output_fasta, "w")
+                with open(input_fasta,"r") as fi:
+                    for ln in fi:
+                        if ln.startswith('>'):
+                            ln = ">" + filename + "_" + str(rn)+"\n"
+                            rn += 1
+                        fo.write(ln)
+                os.remove(input_fasta)
+        except:
+            print(bcolors.FAIL + 'Header formatting failed.' + bcolors.ENDC)
 
 
 rule merge_reads:
-    input: expand("{OUTPUT_DIR}/{samples}.head.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
-    output: temp("{OUTPUT_DIR}/reads.qc.fa".format(OUTPUT_DIR = OUTPUT_DIR))
+    input: expand("{OUTPUT_DIR}reads/{samples}.head.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
+    output: temp("{OUTPUT_DIR}reads/reads.qc.fa".format(OUTPUT_DIR = OUTPUT_DIR))
     run:
         shell("cat {input} > {output}")
         for input_head_fasta in input:
@@ -82,6 +100,6 @@ rule merge_reads:
 
 
 rule linearize_reads:
-    input: "{OUTPUT_DIR}/reads.qc.fa".format(OUTPUT_DIR = OUTPUT_DIR)
-    output: "{OUTPUT_DIR}/reads.qc.lin.fa".format(OUTPUT_DIR = OUTPUT_DIR)
+    input: "{OUTPUT_DIR}reads/reads.qc.fa".format(OUTPUT_DIR = OUTPUT_DIR)
+    output: "{OUTPUT_DIR}reads/reads.qc.lin.fa".format(OUTPUT_DIR = OUTPUT_DIR)
     shell: "seqkit seq -w 0 {input} > {output}"

@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	bbmap
+	9
+
+[Sat Feb  1 18:20:40 2020]
+rule bbmap:
+    input: /home/david/MEIJI/reads/reads.qc.lin.fa
+    output: /home/david/MEIJI/output/bbmap.6.sam
+    jobid: 2
+    wildcards: build=6
+
+Terminating processes on user request, this might take some time.
+Complete log: /home/david/MEIJI/0.1/.snakemake/log/2020-02-01T182040.837249.snakemake.log

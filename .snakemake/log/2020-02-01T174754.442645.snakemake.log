@@ -1,0 +1,4 @@
+WildcardError in line 37 of /home/david/MEIJI/0.1/rules/align_reads.smk:
+No values given for wildcard 'build'.
+  File "/home/david/MEIJI/0.1/Snakefile", line 84, in <module>
+  File "/home/david/MEIJI/0.1/rules/align_reads.smk", line 37, in <module>

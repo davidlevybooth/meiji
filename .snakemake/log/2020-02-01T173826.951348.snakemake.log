@@ -1,0 +1,3 @@
+KeyError in line 75 of /home/david/MEIJI/0.1/Snakefile:
+'build'
+  File "/home/david/MEIJI/0.1/Snakefile", line 75, in <module>

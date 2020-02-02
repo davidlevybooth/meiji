@@ -39,23 +39,31 @@ __license__ = "GPL3"
 import os
 from pathlib import Path
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
 THREADS = config["threads"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 SAMPLE_DIR = config["SAMPLE_DIR"]
+INDEX_DIR = config["INDEX_DIR"]
 
+# definitions #########################################################
 
-# definitions ###########################################################
+def database_collect(INDEX_DIR):
+    index_list = os.listdir(INDEX_DIR+"/ref/index")
+    index_list.sort()
+    return(index_list)
 
-#Move this to central file parsing module
-def read_format(SAMPLE_DIR):
-    fq_list = os.listdir(SAMPLE_DIR)
-    fq_list.sort()
-    fq_list = [f.replace(".fastq", "") for f in fq_list]
-    return(fq_list)
+# parse index #########################################################
 
-# file parsing ##############################################################
-
-input_samples = read_format(SAMPLE_DIR)
+index_nodes = database_collect(INDEX_DIR)
 
 # rule all ##################################################################
 
@@ -64,16 +72,16 @@ rule all:
     Collect the main outputs of the workflow.
     """
     input:
-        "{OUTPUT_DIR}/reads.qc.lin.fa".format(OUTPUT_DIR = OUTPUT_DIR)
-        #expand("{OUTPUT_DIR}/{filtered_samples}", filtered_samples = input_samples, OUTPUT_DIR = OUTPUT_DIR)
-        # "{OUTDIR}/merged.sam.covfilt.taxonomy.count.tsv",
+        "{OUTPUT_DIR}reads/reads.qc.lin.sub.fa".format(OUTPUT_DIR = OUTPUT_DIR),
+        expand("{OUTPUT_DIR}output/bbmap.{build}.sam", OUTPUT_DIR = OUTPUT_DIR, build = index_nodes)
+        #"{OUTDIR}/merged.sam.covfilt.taxonomy.count.tsv",
         # "{OUTDIR}/clustered/merged.sam.covfilt.taxonomy.count.clustered.tsv",
         # "{OUTDIR}/merged.sam.covfilt.taxonomy.count.species.kegg.txt"
 
 # rules ##################################################################
 
 include: "rules/prepare_reads.smk"
-# include: "rules/align_reads.smk"
+include: "rules/align_reads.smk"
 # include: "rules/process_alignment.smk"
 # include: "rules/filter_counts.smk"
 # include: "rules/assign_function.smk"
