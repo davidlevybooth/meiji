@@ -1,0 +1,16 @@
+channels:
+  - bioconda
+  - conda-forge
+  - knights-lab
+dependencies:
+  - snakemake-minimal =5.2.4
+  - python =3.7
+  - pandas =1.0.0
+  - numpy =1.18.1
+  - networkx =2.1
+  - matplotlib =2.2.3
+  - samtools =1.10
+  - python-louvain =0.13
+  - seqkit =0.11.0
+  - bbmap =38.76
+  - shogun =1.0.7
