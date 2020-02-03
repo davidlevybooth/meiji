@@ -33,9 +33,6 @@ THREADS = config["threads"]
 SAMPLE_DIR = config["SAMPLE_DIR"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 
-# messages ##############################################################
-
-print(bcolors.OKBLUE + "\nRunning Meiji prepare_reads module 0.1\n" + bcolors.ENDC)
 
 # definitions ###########################################################
 
@@ -63,8 +60,14 @@ rule bbduk:
     input: "{SAMPLE_DIR}/{{samples}}.fastq".format(SAMPLE_DIR = SAMPLE_DIR)
     output: "{OUTPUT_DIR}/reads/{{samples}}.fasta".format(OUTPUT_DIR = OUTPUT_DIR)
     threads: THREADS
+    message: bcolors.OKBLUE + "\nRunning Meiji prepare_reads module 0.1\n" + bcolors.ENDC
+    params:
+        trimq=30,
+        minlen=130,
+        ftr=160,
+        ftl=10
     run:
-        shell("bbduk.sh -Xmx20g t={threads} in={input} out={output} qtrim=r trimq=30 minlen=130 ftl=10 ftr=160")
+        shell("bbduk.sh -Xmx20g t={threads} in={input} out={output} qtrim=r trimq={params.trimq} minlen={params.minlen} ftl={params.ftl} ftr={params.ftr}")
 
 rule format_headers:
     input: expand("{OUTPUT_DIR}reads/{samples}.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
@@ -98,7 +101,6 @@ rule merge_reads:
         shell("cat {input} > {output}")
         for input_head_fasta in input:
             os.remove(input_head_fasta)
-
 
 rule linearize_reads:
     input: "{OUTPUT_DIR}reads/reads.qc.fa".format(OUTPUT_DIR = OUTPUT_DIR)

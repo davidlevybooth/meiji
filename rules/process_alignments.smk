@@ -32,15 +32,13 @@ THREADS = config["threads"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 INDEX_DIR = config["INDEX_DIR"]
 
-# messages ##############################################################
-
-print(bcolors.OKBLUE + "\nRunning Meiji process_alignments module 0.1\n" + bcolors.ENDC)
 
 # rules #################################################################
 
 rule merge_sams:
     input: directory("{OUTPUT_DIR}output/".format(OUTPUT_DIR = OUTPUT_DIR))
-    output: "{OUTPUT_DIR}processed/merged.sam".format(OUTPUT_DIR = OUTPUT_DIR)
+    output: temp("{OUTPUT_DIR}processed/merged.sam".format(OUTPUT_DIR = OUTPUT_DIR))
+    message: bcolors.OKBLUE + "\nRunning Meiji process_alignments module 0.1\n" + bcolors.ENDC
     script:
         "scripts/sam.merge.py"
 
@@ -56,7 +54,7 @@ rule sam_coverage:
     input:
         "{OUTPUT_DIR}processed/merged.cov".format(OUTPUT_DIR = OUTPUT_DIR),
         "{OUTPUT_DIR}processed/merged.sam".format(OUTPUT_DIR = OUTPUT_DIR)
-    output: "{OUTPUT_DIR}processed/merged.sam.covfilt".format(OUTPUT_DIR = OUTPUT_DIR)
+    output: temp("{OUTPUT_DIR}processed/merged.sam.covfilt".format(OUTPUT_DIR = OUTPUT_DIR))
     params:
         first_cov_cutoff=0.5
     script:
@@ -66,7 +64,7 @@ rule sam_taxonomy:
     input:
         "{OUTPUT_DIR}processed/merged.sam.covfilt".format(OUTPUT_DIR = OUTPUT_DIR),
         "taxonomy/TAXONOMY"
-    output: "{OUTPUT_DIR}processed/merged.sam.covfilt.taxonomy".format(OUTPUT_DIR = OUTPUT_DIR)
+    output: temp("{OUTPUT_DIR}processed/merged.sam.covfilt.taxonomy".format(OUTPUT_DIR = OUTPUT_DIR))
     script:
         "scripts/sam.taxonomy.py"
 

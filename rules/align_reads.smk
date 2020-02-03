@@ -42,10 +42,6 @@ def database_collect(INDEX_DIR):
 
 index_nodes = database_collect(INDEX_DIR)
 
-# messages ############################################################
-
-print(bcolors.OKBLUE + "\nRunning Meiji align_reads module 0.1\n" + bcolors.ENDC)
-
 # rules ###############################################################
 
 rule bbmap:
@@ -57,6 +53,7 @@ rule bbmap:
         fastareadlen=150,
         minidentity=0.97
     threads: THREADS
+    message: bcolors.OKBLUE + "\nRunning Meiji align_reads module 0.1\n" + bcolors.ENDC
     run:
         seqnum = len([1 for line in open(str(input)) if line.startswith(">")])
         print(bcolors.OKBLUE + "Aligning " + str(seqnum) + " reads against:\n23458 bacterial genomes\n1248 archaeal genomes\nacross " + str(len(index_nodes)) + " index nodes"+ bcolors.ENDC)
