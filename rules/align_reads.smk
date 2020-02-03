@@ -43,10 +43,9 @@ def database_collect(INDEX_DIR):
 
 index_nodes = database_collect(INDEX_DIR)
 index_nodes.sort()
-
-print(bcolors.OKBLUE + "Aligning against:\n23458 bacterial genomes\n1248 archaeal genomes\nacross " + str(len(index_nodes)) + " index nodes"+ bcolors.ENDC)
-print(bcolors.OKBLUE + "This is going to take a while.\n"+ bcolors.ENDC)
-time.sleep(3)
+# print(bcolors.OKBLUE + "Aligning against:\n23458 bacterial genomes\n1248 archaeal genomes\nacross " + str(len(index_nodes)) + " index nodes"+ bcolors.ENDC)
+# print(bcolors.OKBLUE + "This is going to take a while.\n"+ bcolors.ENDC)
+# time.sleep(2)
 
 # rules ###############################################################
 
@@ -60,7 +59,7 @@ rule bbmap:
     threads: THREADS
     message: bcolors.OKBLUE + "\nRunning Meiji align_reads module 0.1\n" + bcolors.ENDC
     run:
-        #Explicitly check if SAM outputs exist to avoid rewritting
+        #To do: Explicitly check if SAM outputs exist to avoid rewritting
         #Consider using protected files for SAM outputs
         for i in index_nodes:
             alignment = "{OUTPUT_DIR}output/bbmap.{i}.sam".format(OUTPUT_DIR = OUTPUT_DIR, i = i)

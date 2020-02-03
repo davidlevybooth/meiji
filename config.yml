@@ -3,9 +3,14 @@
 # Configure environment
 ###############################################################################
 threads: 8
+# For directory inputs, please include a trailing forward slash: "/"
+# Example: SAMPLE_DIR: /home/user/reads/
+# Not: SAMPLE_DIR: /home/user/reads
+# This will be fixed in a future update
+SAMPLE_DIR: /home/david/HOG_META/reads/
 
-SAMPLE_DIR: /home/data/ssmstest/reads/
-
-OUTPUT_DIR: /home/david/MEIJI/
+OUTPUT_DIR: /home/david/HOG_META/MEIJI/
 
 INDEX_DIR: /home/data/db/gtdb/bbmap/
+
+READ_LIMIT: 1000000 #if non-zero positive integer, meiji will only processes random subset of reads equalling this value

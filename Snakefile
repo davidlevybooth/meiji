@@ -39,16 +39,6 @@ __license__ = "GPL3"
 import os
 from pathlib import Path
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
 THREADS = config["threads"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 SAMPLE_DIR = config["SAMPLE_DIR"]

@@ -101,12 +101,12 @@ def main():
 
 	#Call plotting of network in matplotlib if flagged
 	if write_plot:
-		plotting(partition, output_path,show_plot)
+		plotting(partition, output_path, G)
 
 
 #drawing
-def plotting(partition, output_path, show_plot):
-	show_plot = False #Debugging (and it looks cool)
+def plotting(partition, output_path, G):
+	#show_plot = False #Debugging (and it looks cool)
 	size = float(len(set(partition.values())))
 	pos = nx.spring_layout(G)
 	count = 0.
@@ -119,8 +119,8 @@ def plotting(partition, output_path, show_plot):
 
 	nx.draw_networkx_edges(G, pos, alpha=0.5)
 	plt.savefig(output_path+".pdf")
-	if show_plot:
-		plt.show()
+	#if show_plot:
+	#	plt.show()
 
 
 def cov_filter(cov_path, taxonomy_string, ANI, TAXONOMY):

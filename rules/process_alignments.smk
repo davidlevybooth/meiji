@@ -42,7 +42,6 @@ def database_collect(INDEX_DIR):
 
 index_nodes = database_collect(INDEX_DIR)
 
-
 # rules #################################################################
 
 rule merge_sams:
@@ -96,6 +95,6 @@ rule cluster_taxonomy:
     params:
         ANI_cutoff=94,
         count_cutoff=100,
-        write_cluster_plot=False
+        write_cluster_plot=True
     script:
         "scripts/cluster.taxonomy.py"
