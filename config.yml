@@ -4,7 +4,7 @@
 ###############################################################################
 threads: 8
 
-SAMPLE_DIR: /home/data/ssmstest/reads
+SAMPLE_DIR: /home/data/ssmstest/reads/
 
 OUTPUT_DIR: /home/david/MEIJI/
 

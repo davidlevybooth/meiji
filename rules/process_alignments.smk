@@ -32,13 +32,25 @@ THREADS = config["threads"]
 OUTPUT_DIR = config["OUTPUT_DIR"]
 INDEX_DIR = config["INDEX_DIR"]
 
+# definitions #########################################################
+def database_collect(INDEX_DIR):
+    index_list = os.listdir(INDEX_DIR+"/ref/index")
+    index_list.sort()
+    return(index_list)
+
+# parse index #########################################################
+
+index_nodes = database_collect(INDEX_DIR)
+
 
 # rules #################################################################
 
 rule merge_sams:
-    input: directory("{OUTPUT_DIR}output/".format(OUTPUT_DIR = OUTPUT_DIR))
+    input: expand("{OUTPUT_DIR}output/bbmap.{build}.sam", OUTPUT_DIR = OUTPUT_DIR, build = index_nodes)
     output: temp("{OUTPUT_DIR}processed/merged.sam".format(OUTPUT_DIR = OUTPUT_DIR))
     message: bcolors.OKBLUE + "\nRunning Meiji process_alignments module 0.1\n" + bcolors.ENDC
+    params:
+        input_directory="{OUTPUT_DIR}output/".format(OUTPUT_DIR = OUTPUT_DIR)
     script:
         "scripts/sam.merge.py"
 

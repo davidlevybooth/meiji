@@ -57,8 +57,8 @@ samples = read_format(SAMPLE_DIR)
 # rules ##################################################################
 
 rule bbduk:
-    input: "{SAMPLE_DIR}/{{samples}}.fastq".format(SAMPLE_DIR = SAMPLE_DIR)
-    output: "{OUTPUT_DIR}/reads/{{samples}}.fasta".format(OUTPUT_DIR = OUTPUT_DIR)
+    input: expand("{SAMPLE_DIR}{samples}.fastq", SAMPLE_DIR = SAMPLE_DIR, samples = samples)
+    output: expand("{OUTPUT_DIR}reads/{samples}.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)
     threads: THREADS
     message: bcolors.OKBLUE + "\nRunning Meiji prepare_reads module 0.1\n" + bcolors.ENDC
     params:
@@ -67,7 +67,10 @@ rule bbduk:
         ftr=160,
         ftl=10
     run:
-        shell("bbduk.sh -Xmx20g t={threads} in={input} out={output} qtrim=r trimq={params.trimq} minlen={params.minlen} ftl={params.ftl} ftr={params.ftr}")
+        for sample in samples:
+            input_fastq="{SAMPLE_DIR}{sample}.fastq".format(SAMPLE_DIR=SAMPLE_DIR, sample = sample)
+            output_fasta="{OUTPUT_DIR}reads/{sample}.fasta".format(OUTPUT_DIR=OUTPUT_DIR, sample = sample)
+            shell("bbduk.sh -Xmx20g t={threads} in={input_fastq} out={output_fasta} qtrim=r trimq={params.trimq} minlen={params.minlen} ftl={params.ftl} ftr={params.ftr}")
 
 rule format_headers:
     input: expand("{OUTPUT_DIR}reads/{samples}.fasta", OUTPUT_DIR = OUTPUT_DIR, samples = samples)

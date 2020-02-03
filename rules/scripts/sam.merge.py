@@ -14,7 +14,7 @@ import os
 
 # Arguments ##########################################################
 
-dirpath = snakemake.input[0]
+dirpath = snakemake.params[0]
 outpath = snakemake.output[0]
 mapping = True
 print("\nMerge SAM 0.1\n")
